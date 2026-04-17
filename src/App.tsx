@@ -31,7 +31,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/isaacs_roofing">
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header />

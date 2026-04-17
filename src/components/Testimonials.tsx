@@ -5,21 +5,21 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "Homeowner in Austin",
-    text: "Elite Roofing replaced my entire roof in just two days. The crew was professional, clean, and the final result looks amazing. Highly recommend!",
+    text: "Isaacs Roofing replaced my entire roof in just two days. The crew was professional, clean, and the final result looks amazing. Highly recommend!",
     rating: 5,
     avatar: "https://picsum.photos/seed/user1/100/100"
   },
   {
     name: "Michael Chen",
     role: "Property Manager",
-    text: "I've worked with many contractors, but Elite is on another level. Their communication is perfect and they fixed a chronic leak other companies missed.",
+    text: "I've worked with many contractors, but Isaacs is on another level. Their communication is perfect and they fixed a chronic leak other companies missed.",
     rating: 5,
     avatar: "https://picsum.photos/seed/user2/100/100"
   },
   {
     name: "Robert Williams",
     role: "Real Estate Agent",
-    text: "I always recommend Elite to my clients. They are fast, reliable, and their inspections are incredibly thorough. Best roofing company in the city.",
+    text: "I always recommend Isaacs to my clients. They are fast, reliable, and their inspections are incredibly thorough. Best roofing company in the city.",
     rating: 5,
     avatar: "https://picsum.photos/seed/user3/100/100"
   }

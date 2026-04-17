@@ -12,10 +12,10 @@ export default function Footer() {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-8">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
-                <span className="font-display font-bold text-2xl">E</span>
+                <span className="font-display font-bold text-2xl">I</span>
               </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
-                ELITE<span className="text-primary">ROOFING</span>
+                ISAACS<span className="text-primary">ROOFING</span>
               </span>
             </div>
             <p className="mb-8 text-sm leading-relaxed max-w-xs">
@@ -58,7 +58,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-primary flex-shrink-0" size={18} />
-                <a href="mailto:info@eliteroofing.com" className="hover:text-primary transition-colors">info@eliteroofing.com</a>
+                <a href="mailto:info@isaacsroofing.com" className="hover:text-primary transition-colors">info@isaacsroofing.com</a>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
-          <p>© {currentYear} Elite Roofing Solutions. All rights reserved.</p>
+          <p>© {currentYear} Isaacs Roofing. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

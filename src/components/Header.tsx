@@ -15,10 +15,10 @@ export default function Header() {
             className="flex items-center gap-2"
           >
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
-              <span className="font-display font-bold text-2xl">E</span>
+              <span className="font-display font-bold text-2xl">I</span>
             </div>
             <span className="font-display font-bold text-xl tracking-tight hidden sm:block">
-              ELITE<span className="text-primary">ROOFING</span>
+              ISAACS<span className="text-primary">ROOFING</span>
             </span>
           </motion.div>
 

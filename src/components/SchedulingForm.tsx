@@ -30,7 +30,7 @@ export default function SchedulingForm() {
             </div>
             <h2 className="text-3xl font-black text-emerald-900 mb-4">Request Received!</h2>
             <p className="text-emerald-700 mb-8 max-w-md">
-              Thank you for trusting Elite Roofing. One of our specialists will call you within the next 30 minutes to confirm your appointment.
+              Thank you for trusting Isaacs Roofing. One of our specialists will call you within the next 30 minutes to confirm your appointment.
             </p>
             <button 
               onClick={() => setSubmitted(false)}

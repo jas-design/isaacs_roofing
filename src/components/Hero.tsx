@@ -19,7 +19,7 @@ export default function Hero() {
               Trusted by 2,500+ Local Homeowners
             </div>
             <h1 className="text-5xl lg:text-7xl font-display font-black leading-[1.1] mb-6">
-              Reliable Roofing That <span className="text-primary italic">Protects</span> Your Home
+              Isaacs Roofing: <span className="text-primary italic">Protection</span> You Can Trust
             </h1>
             <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-lg">
               Expert roofing services with premium materials and a lifetime workmanship warranty. We handle everything from minor repairs to full replacements.

@@ -14,7 +14,7 @@ export default function About() {
             <div className="relative rounded-[40px] overflow-hidden aspect-square shadow-2xl z-10">
               <img 
                 src="https://picsum.photos/seed/crew/800/800" 
-                alt="Elite Roofing Professional Team" 
+                alt="Isaacs Roofing Professional Team" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -41,7 +41,7 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
               <p>
-                Founded in 1999, Elite Roofing Solutions began with a single truck and a simple mission: to provide our neighbors with honest, high-quality roofing that lasts a lifetime.
+                Founded in 1999, Isaacs Roofing began with a single truck and a simple mission: to provide our neighbors with honest, high-quality roofing that lasts a lifetime.
               </p>
               <p>
                 Today, we are one of the region's most respected roofing companies, but our core values haven't changed. We treat every home like it's our own, using only the finest materials and employing the most skilled artisans in the trade.

@@ -1,8 +1,15 @@
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  const handleNavClick = (id: string) => {
+    if (window.location.pathname === '/') {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer className="bg-slate-900 text-slate-400 pt-20 pb-10 overflow-hidden">
@@ -10,14 +17,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-8">
+            <Link to="/" className="flex items-center gap-2 mb-8">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
                 <span className="font-display font-bold text-2xl">I</span>
               </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
                 ISAACS<span className="text-primary">ROOFING</span>
               </span>
-            </div>
+            </Link>
             <p className="mb-8 text-sm leading-relaxed max-w-xs">
               Protecting your home with excellence since 1999. We are your local experts for everything roofing.
             </p>
@@ -34,11 +41,21 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-8 uppercase text-xs tracking-widest">Navigation</h4>
             <ul className="space-y-4 text-sm">
-              {['Services', 'Our Process', 'Testimonials', 'About Us', 'Get a Quote'].map((item, i) => (
+              {[
+                { name: 'Services', path: '/services' },
+                { name: 'Our Process', path: '/#our-process', id: 'our-process' },
+                { name: 'Testimonials', path: '/#testimonials', id: 'testimonials' },
+                { name: 'About Us', path: '/#about', id: 'about' },
+                { name: 'Contact', path: '/contact' }
+              ].map((item, i) => (
                 <li key={i}>
-                  <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="hover:text-primary transition-colors flex items-center gap-2 group">
-                    {item} <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
+                  <Link 
+                    to={item.path} 
+                    onClick={() => item.id && handleNavClick(item.id)}
+                    className="hover:text-primary transition-colors flex items-center gap-2 group"
+                  >
+                    {item.name} <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </Link>
                 </li>
               ))}
             </ul>

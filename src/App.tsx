@@ -3,32 +3,47 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import TrustBadges from './components/TrustBadges';
-import Services from './components/Services';
-import Process from './components/Process';
-import Testimonials from './components/Testimonials';
-import SchedulingForm from './components/SchedulingForm';
-import About from './components/About';
-import BeforeAfter from './components/BeforeAfter';
 import Footer from './components/Footer';
+import HomePage from './pages/Home';
+import ServicesPage from './pages/Services';
+import ContactPage from './pages/Contact';
+
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0);
+    } else {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [pathname, hash]);
+
+  return null;
+}
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <TrustBadges />
-        <Services />
-        <Process />
-        <BeforeAfter />
-        <Testimonials />
-        <About />
-        <SchedulingForm />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
